@@ -1,3 +1,4 @@
+from api_yamdb.settings import ADMIN_EMAIL
 from django.contrib.auth.tokens import default_token_generator
 from django.core.mail import send_mail
 from django.db.models import Avg
@@ -9,8 +10,6 @@ from rest_framework.permissions import (SAFE_METHODS, IsAuthenticated,
                                         IsAuthenticatedOrReadOnly)
 from rest_framework.response import Response
 from rest_framework_simplejwt.tokens import AccessToken
-
-from api_yamdb.settings import ADMIN_EMAIL
 from reviews.models import Category, Genre, Review, Title
 from users.models import User
 
