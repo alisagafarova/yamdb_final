@@ -27,7 +27,6 @@ jobs:
       run: |
         python -m flake8
         pytest
-
   build_and_push_to_docker_hub:
       name: Push Docker image to Docker Hub
       runs-on: ubuntu-latest
@@ -47,8 +46,7 @@ jobs:
           with:
             push: true
             tags: ${{ secrets.DOCKER_USERNAME }}/yamdb_web:v1
-
-deploy:
+  deploy:
     runs-on: ubuntu-latest
     needs: build_and_push_to_docker_hub
     steps:
