@@ -48,7 +48,6 @@ class CurrentTitleDefault:
     def __call__(self, serializer_field):
         title = get_object_or_404(
             Title, id=serializer_field.context['title_id'])
-        return title
 
 
 class ReviewSerializer(serializers.ModelSerializer):
