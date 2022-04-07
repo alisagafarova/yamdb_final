@@ -8,10 +8,8 @@ services:
     env_file:
       - .env
 
-  web:
-    build:
-      context: ..
-      dockerfile: alisagafarova/yamdb_final:v1
+web:
+    image: alisagafarova/yamdb_final:v1
     restart: always
     volumes:
       - static_value:/app/static/
