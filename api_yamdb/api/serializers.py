@@ -1,9 +1,10 @@
-from api_yamdb.settings import MIN_LEN_USERNAME, THIS_YEAR
 from rest_framework import serializers
 from rest_framework.generics import get_object_or_404
 from rest_framework.validators import UniqueTogetherValidator
 from reviews.models import Category, Comments, Genre, Review, Title
 from users.models import CHOICES_ROLE, User
+
+from api_yamdb.settings import MIN_LEN_USERNAME, THIS_YEAR
 
 
 class CreateUserSerializer(serializers.ModelSerializer):

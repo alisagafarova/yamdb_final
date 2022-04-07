@@ -1,8 +1,9 @@
-from api_yamdb.settings import THIS_YEAR
 from django.core.exceptions import ValidationError
 from django.core.validators import MaxValueValidator, MinValueValidator
 from django.db import models
 from users.models import User
+
+from api_yamdb.settings import THIS_YEAR
 
 
 class Category(models.Model):
