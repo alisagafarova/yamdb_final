@@ -133,7 +133,7 @@ jobs:
             sudo rm -r nginx
             sudo wget -O docker-compose.yaml https://github.com/alisagafarova/yamdb_final/blob/master/infra/docker-compose.yaml?raw=true
             sudo mkdir nginx && cd nginx
-            sudo wget -O default.conf https://github.com/alisagafarova/yamdb_final/blob/master/infra/nginx/default.conf?raw=true && cd ..
+            sudo wget -O default.conf https://github.com/alisagafarova/yamdb_final/blob/master/infra/nginx/%20default.conf?raw=true && cd ..
             sudo docker-compose stop
             sudo docker-compose rm web
             touch .env
