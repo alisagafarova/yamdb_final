@@ -4,7 +4,6 @@ name: yamdb-drf workflow
 on: [push]
 
 env:
-  SECRET_KEY: ${{ secrets.SECRET_KEY }}
   DB_ENGINE: ${{ secrets.DB_ENGINE }}
   DB_NAME: ${{ secrets.DB_NAME }}
   POSTGRES_USER: ${{ secrets.POSTGRES_USER }}
@@ -135,7 +134,6 @@ jobs:
             sudo docker-compose stop
             sudo docker-compose rm web
             touch .env
-            echo SECRET_KEY=${{ secrets.SECRET_KEY }} >> .env
             echo DB_ENGINE=${{ secrets.DB_ENGINE }} >> .env
             echo DB_NAME=${{ secrets.DB_NAME }} >> .env
             echo POSTGRES_USER=${{ secrets.POSTGRES_USER }} >> .env
