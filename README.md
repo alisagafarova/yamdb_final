@@ -1,4 +1,4 @@
-![yamdb_workflow](https://github.com/alisagafarova/yamdb_final/actions/workflows/yamdb_workflow.yaml/badge.svg)
+![yamdb_workflow](https://github.com/alisagafarova/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 ![django version](https://img.shields.io/badge/Django-3.1.13-green)
 ![python version](https://img.shields.io/badge/Python-3.7%20%7C%203.8%20%7C%203.9-green)
 
@@ -11,7 +11,7 @@
 Клонировать репозиторий и перейти в него в командной строке:
 
 ```
-git clone git@github.com:pakodev28/infra_sp2.git
+git clone git@github.com:alisagafarova/yamdb_final.git
 ```
 
 ```
