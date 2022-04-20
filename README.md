@@ -72,3 +72,9 @@ docker-compose exec web python manage.py load_comments_data
 ```
 docker-compose exec web python manage.py load_users_data
 ```
+MIT
+#### Ссылки на проект
+http://51.250.111.242/api/v1/
+
+#### Документация API-сервера:
+http://51.250.111.242/redoc/
